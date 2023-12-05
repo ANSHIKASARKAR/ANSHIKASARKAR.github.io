@@ -726,21 +726,3 @@ $(function () {
     End Vendors plugins options Area 
      ---------------------------------- */
 });
-
-
-
-function toggleMode(mode) {
-  var body = document.body;
-
-  if (mode === 'light') {
-    body.classList.remove('dark-mode');
-    body.classList.add('light-mode');
-  } else {
-    body.classList.remove('light-mode');
-    body.classList.add('dark-mode');
-  }
-
-  // Toggle invert-image class based on the mode
-  var darkLogoImage = document.querySelector('.dark-logo img');
-  darkLogoImage.classList.toggle('invert-image', mode === 'dark');
-}
