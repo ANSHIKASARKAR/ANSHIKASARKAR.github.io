@@ -1,3 +1,9 @@
+@media (max-width: 1199px){
+.header-basic .controls-box .menu-toggler {
+    display: flex;
+}
+}
+
 @charset "UTF-8";
 /* start global, helper classes , Components Rules*/
 :root {
@@ -1665,7 +1671,7 @@ body.rounded-btns .read-more {
   cursor: pointer;
 }
 .header-basic .controls-box .control:last-child {
-  margin-right: 0;
+  margin-right: 39rem;
 }
 .header-basic .controls-box .header-search-btn {
   display: flex;
@@ -1675,7 +1681,7 @@ body.rounded-btns .read-more {
   font-size: 1.5rem;
 }
 .header-basic .controls-box .menu-toggler {
-  margin-right: 1rem;
+  margin-right: 53rem;
   display: none;
 }
 .header-basic .controls-box .menu-toggler > span {
