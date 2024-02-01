@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -998,12 +998,29 @@
     <script>
         window.onload = function() {
           // Trigger SweetAlert2 on page load
-          Swal.fire({
-            imageUrl: "/assets/images/hero/ibmAdv.jpg",
-            imageHeight: 200,
-            imageAlt: "A tall image",
-            confirmButtonText: 'OK'
-          });
+            Swal.fire({
+                imageUrl: "/assets/images/hero/ibmAdv.jpg",
+                imageHeight: 400,
+                imageWidth: 650,
+                imageAlt: "IBM Registration Page",
+                confirmButtonColor: "#0530ad",
+                cancelButtonColor: "#d33",
+                showCancelButton: true,
+                cancelButtonText: 'Close',
+                confirmButtonText: 'Register Now'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = 'https://bit.ly/selfregCSRBOX'; 
+                } else if (result.dismiss === Swal.DismissReason.cancel) {
+                    // Handle Close button click
+                    Swal.fire({
+                        title: 'Registration Cancelled',
+                        icon: 'info',
+                        confirmButtonColor: "#0530ad",
+                        confirmButtonText: 'OK'
+                    });
+                }
+            });
         };
       </script>
 </body>
