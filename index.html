@@ -1011,15 +1011,8 @@
             }).then((result) => {
                 if (result.isConfirmed) {
                     window.open('https://bit.ly/selfregCSRBOX', '_blank');
-                } else if (result.dismiss === Swal.DismissReason.cancel) {
-                    // Handle Close button click
-                    Swal.fire({
-                        title: 'Registration Cancelled',
-                        icon: 'info',
-                        confirmButtonColor: "#0530ad",
-                        confirmButtonText: 'OK'
-                    });
-                }
+                } 
+                
             });
         };
       </script>
