@@ -41,6 +41,8 @@
     <link rel="stylesheet" href="/css/css-home/style.css" />
     <!-- Responsive Style Css -->
     <link rel="stylesheet" href="/css/css-home/responsive.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 
 <style>
@@ -143,28 +145,6 @@
         <section class="slider fixed-slider slide-controls" id="home">
             <div class="swiper-container parallax-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="bg-img v-align-center" id="bg-img-banner" data-background="/assets/img/banner.png">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-10 offset-lg-1">
-                                        <div class="caption">
-                                            <div class="col-md-12">
-                                                 <div class="typing-container">
-                                                    <h6 id="sentence" class="sentence"></h6>
-                                                    <span id="feature-text"></span>
-                                                    <span class="input-cursor"></span>
-                                                 </div>
-                                                <a href="https://bit.ly/selfregCSRBOX" target="_blank" id="register"
-                                                    style="background-color: blue;" class="btn-main"><span
-                                                        data-splitting>Register Now</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="swiper-slide">
                         <div class="bg-img v-align-center" data-background="/assets/img/portfolio/1.jpeg"
                             data-overlay-dark="3">
@@ -994,6 +974,7 @@
 
 
     </script>
+   
     <!-- Start Cursor -->
     <div class="circle"></div>
     <div class="circle-follow"></div>
@@ -1013,6 +994,18 @@
     <script src="/js/js-home/jquery.magnific-popup.js"></script>
     <!-- custom scripts -->
     <script src="/js/js-home/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        window.onload = function() {
+          // Trigger SweetAlert2 on page load
+          Swal.fire({
+            imageUrl: "/assets/images/hero/ibmAdv.jpg",
+            imageHeight: 200,
+            imageAlt: "A tall image",
+            confirmButtonText: 'OK'
+          });
+        };
+      </script>
 </body>
 
 </html>
