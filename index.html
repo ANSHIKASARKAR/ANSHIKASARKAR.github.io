@@ -1010,7 +1010,7 @@
                 confirmButtonText: 'Register Now'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    window.location.href = 'https://bit.ly/selfregCSRBOX'; 
+                    window.open('https://bit.ly/selfregCSRBOX', '_blank');
                 } else if (result.dismiss === Swal.DismissReason.cancel) {
                     // Handle Close button click
                     Swal.fire({
